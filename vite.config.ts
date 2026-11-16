@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // This repository is published at https://debmoonx.github.io/landing-page/
-    base: '/landing-page/',
+    // This repository is published at https://debmoonx.github.io/portfolio/
+    base: '/portfolio/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
