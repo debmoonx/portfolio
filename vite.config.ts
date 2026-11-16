@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // This repository is published at https://debmoonx.github.io/portfolio/
-    base: '/portfolio/',
+    // Keep the repository path on GitHub Pages; use the domain root on Vercel.
+    base: process.env.GITHUB_ACTIONS === 'true' ? '/portfolio/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
