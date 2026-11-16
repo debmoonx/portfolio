@@ -33,6 +33,8 @@ jobs:
           VITE_GOOGLE_SHEETS_WEBHOOK: ${{ secrets.VITE_GOOGLE_SHEETS_WEBHOOK }}
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
